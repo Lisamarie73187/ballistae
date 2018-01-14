@@ -1,0 +1,157 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../Assests/Hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroText{
+    color: white;
+    text-align: center;
+    padding: 230px;
+    font-size: 8.5em;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat";
+    /* font-kerning: 90px; */
+    letter-spacing: 15px;
+    line-height: 70px;
+    text-shadow: 6px 6px 4px rgba(14, 14, 14, 0.904);
+}
+
+.logo{
+    width: 200px;
+}
+
+.header{
+    background-color: black;
+}
+.boxyBox{
+    width: 500px;
+}
+.nav{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    color: white;
+    padding: 15px 25px;;
+    font-size: 16pt;
+    font-family: 'Kanit', sans-serif;
+} 
+
+.red{
+    width: 30vw;
+    margin: auto;
+    height: 8px;
+    background-color: rgb(182, 2, 2);
+    color: rgb(182, 2, 2);
+    font-size: 1pt;
+}
+
+.panelTwo{
+    padding: 60px;
+    margin: auto;
+    text-align: center;
+}
+
+.Finally{
+    padding: 15px;
+    margin-left: 10px;
+    font-size: 29pt;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.textyText{
+    color: rgb(82, 82, 82);
+    font-size: 16pt;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5pt;
+    text-align: center;
+}
+
+.shadow{
+    margin-left: 10vw;
+    box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.43);  
+}
+
+.featuredItem{
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.rapper{
+    background-color: black;
+    padding: 50px 100px 50px 80px;
+    margin-right: 90px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.raps{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+    align-content: stretch;
+    margin-bottom: 200px;
+}
+
+.layoutShop{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+    align-content: center;
+  
+}
+
+
+.footer{
+    color: white;
+    background-color: rgb(48, 48, 48);
+    padding: 20px;
+}
+
+.button{
+    background-color: rgb(184, 0, 0);
+    border: none;
+    outline: none;
+    padding: 20px 30px;
+    margin: 35px;
+    color: white;
+    font-size: 15pt;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+form{
+    padding: 30px;
+    text-align: center;
+}
+
+form  div {
+    padding: 10px;
+}
+input{
+    width: 20vw;
+    height: 5vh;
+}
+div > button{
+    width: 10vw;
+    height: 5vh;
+    margin: 8px;
+}
