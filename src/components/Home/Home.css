@@ -150,8 +150,40 @@ input{
     width: 20vw;
     height: 5vh;
 }
-div > button{
-    width: 10vw;
-    height: 5vh;
-    margin: 8px;
+
+h1, h2{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(80, 80, 80);
+}
+
+.about{
+    padding: 100px;
+
+}
+
+.about > h1{
+    text-align: center;
+    padding: 10px 50px;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+p{
+    padding: 0 100px;
+    letter-spacing: .5px;
+    line-height: 30px;
+    /* font-family: 'Oswald', sans-serif; */
+    color: rgb(110, 110, 110);
+    font-size: 14pt;
+}
+
+h2{
+    padding: 10px 100px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin-top: 60px
+}
+
+.main{
+    margin-bottom: 50px;
 }

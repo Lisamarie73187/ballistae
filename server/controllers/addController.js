@@ -7,5 +7,11 @@ module.exports = {
         }).catch( (error) => {
             console.log(error)
             res.status(500).send(error)})
-    }
+    },
+    getProduct: ( req, res, next ) => {
+        const db = req.app.get('db');
+        db.get_products()
+          .then( goals => res.status(200).send( goals ) )
+          .catch( () => res.status(500).send() );
+      },
 }

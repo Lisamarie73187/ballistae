@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+import axios from 'axios';
+import ReactS3Uploader from 'react-s3-uploader';
 
 
 class AddItem extends Component {
@@ -26,6 +27,7 @@ class AddItem extends Component {
             // this.props.history.push('/home');
         }).catch(err => console.error(err))
         }
+        
 
     handleTitleChange ( value ){
         console.log(value)
@@ -61,12 +63,23 @@ class AddItem extends Component {
                                 type="text"
                                 value={this.state.value}
                                 placeholder="description"/></div>
-                    <div><input onChange={(e)=> {this.handleImgChange(e.target.value)}}
-                                value={this.state.value}
-                                placeholder="upload picture"
-                                type="file" 
-                                name="filename" 
-                                accept="image/jpeg, image/png"/></div>
+                    <div><ReactS3Uploader
+                    type="file" 
+                    onChange={this.uploadFile}
+                    signingUrl="/s3/sign"
+                    signingUrlMethod="GET"
+                    accept="image/*"
+                    s3path="/uploads/"
+                    preprocess={this.onUploadStart}
+                    onProgress={this.onUploadProgress}
+                    onError={this.onUploadError}
+                    onFinish={this.onUploadFinish}
+                    signingUrlWithCredentials={ true }      // in case when need to pass authentication credentials via CORS
+                    uploadRequestHeaders={{ 'x-amz-acl': 'public-read' }}  // this is the default
+                    contentDisposition="auto"
+                    scrubFilename={(filename) => filename.replace(/[^\w\d_\-.]+/ig, '')}
+                    inputRef={cmp => this.uploadInput = cmp}
+                    autoUpload={true}/></div>
                     <div><button type="reset">reset</button>
                     <button onClick={this.addNewProduct} type="submit">Add</button></div>
                </form>

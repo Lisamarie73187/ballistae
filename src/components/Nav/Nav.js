@@ -20,7 +20,7 @@ class Nav extends Component {
                         <Link to="/about" className="link"><div>About Us</div></Link>
                         <Link to="/shop" className="link"><div>Catalog</div></Link>
                         <Link to="/blog" className="link"><div>Blog</div></Link>
-                        <Link to="/admin">admin</Link>
+                        {/* <Link to="/admin">admin</Link> */}
                     </div>
                 </div>
             </div>
