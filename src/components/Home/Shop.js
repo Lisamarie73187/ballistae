@@ -13,21 +13,10 @@ class Shop extends Component {
 
     render() {
         return (
-            <div className="black">
+            <div>
                 <div className="textyText" style={itemName}>{this.props.featured}</div>
                 <div className="layoutShop">
-                    <Item 
-                        picture={pictureOne} 
-                        alt="compression" />
-                    <Item 
-                        picture={pictureOne} 
-                        alt="compression" />
-                    <Item 
-                        picture={pictureOne} 
-                        alt="compression" />
-                    <Item 
-                        picture={pictureOne} 
-                        alt="compression" />
+                    <Item />
                 </div>
                 <div style={flexyFlex}>
                     <button className="button">View All</button>

@@ -113,9 +113,16 @@
 	justify-content: space-around;
 	align-items: baseline;
     align-content: center;
-  
+
 }
 
+.images{
+    margin: 20px;
+    width: 340px;
+    /* margin: auto; */
+    text-align: center;
+    /* background-color: blue; */
+}
 
 .footer{
     color: white;
