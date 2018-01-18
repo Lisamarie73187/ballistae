@@ -24,10 +24,10 @@ class Item extends Component {
     render() {
         return (
             <div>
-                <div className="textyText" style={itemName}>Featured Items</div>
+                <div className="textyText" style={itemName}>Compression Love</div>
                 <div className="layoutShop">
                 <div className="layoutShop">
-                {this.state.data.slice(0,3).map((e) => {
+                {this.state.data.slice(3,6).map((e) => {
                     return (
                     <div key={e.productid}>
                         <div className="images" style={shadow}><img src={`https://s3-us-west-1.amazonaws.com/ballistae/${e.img}`} alt={this.props.alt} height="300px"/></div>
