@@ -5,6 +5,7 @@ import Blog from './components/Home/Blog';
 import BlogOne from './components/Home/BlogOne';
 import AboutUs from './components/Home/AboutUs';
 import Admin from './components/admin/AdminHome';
+import Shop from './components/Home/Shop';
 
 export default (
     <Switch>
@@ -13,5 +14,6 @@ export default (
         <Route path="/blogone" component={ BlogOne }/> 
         <Route path="/about" component={ AboutUs }/> 
         <Route path="/admin" component={ Admin }/> 
+        <Route path="/shop" component={ Shop }/> 
     </Switch>
 )

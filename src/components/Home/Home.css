@@ -109,11 +109,11 @@
 .layoutShop{
     display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: baseline;
     align-content: center;
-
+    width: '25vw'
 }
 
 .images{
@@ -193,4 +193,40 @@ h2{
 
 .main{
     margin-bottom: 50px;
+}
+
+.shop{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+    align-content: stretch;
+    width: '400px';
+}
+
+.productTitle {
+    letter-spacing: 2px;
+    color: rgb(58, 58, 58);
+    font-size: 20pt;
+    font-family: 'Oswald', sans-serif;
+}
+
+.price{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(58, 58, 58);
+    font-size: 18pt;
+}
+
+.desc {
+    width: 300px;
+}
+
+.box {
+    border: solid 1px black;
+}
+
+.pic {
+    width: 350px;
+    height: 400px;
 }

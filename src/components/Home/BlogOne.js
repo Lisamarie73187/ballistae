@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../Nav/Nav'
+import Footer from './Footer'
 // import logo from '../../Assests/ballistaelogoblack.png';
 
 
@@ -106,6 +107,7 @@ class Blog extends Component {
                     If you're looking for an affordable work horse pair, these are for you. 
                     </p>
                 </div>
+                <Footer/>
             </div>
         )
     }
